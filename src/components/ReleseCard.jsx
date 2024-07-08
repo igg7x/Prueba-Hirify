@@ -1,7 +1,7 @@
 import React from "react";
 
 const ReleseCardInformation = ({ title, type, date, desc, img, details }) => (
-  <li className="flex flex-col gap-3">
+  <article key={date} className="flex flex-col gap-3">
     <h2 className="text-2xl font-openSans">{title}</h2>
     <div className=" flex items-center font-openSans gap-2 text-descAndchips">
       <p
@@ -25,7 +25,7 @@ const ReleseCardInformation = ({ title, type, date, desc, img, details }) => (
         ))}
       </ul>
     )}
-  </li>
+  </article>
 );
 
 export default ReleseCardInformation;

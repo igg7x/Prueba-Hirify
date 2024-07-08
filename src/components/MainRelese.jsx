@@ -49,7 +49,9 @@ const MainRelese = () => {
       </header>
       <ul className="mt-2  flex flex-col gap-3 mx-4 w-[90%] p-2">
         {filteredReleases.map((release) => (
-          <ReleseCardInformation {...release} />
+          <li key={release.date}>
+            <ReleseCardInformation {...release} />
+          </li>
         ))}
       </ul>
     </section>
